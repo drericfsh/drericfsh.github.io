@@ -1,0 +1,68 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>NOIP2006  能量项链</title>
+	<link rel=stylesheet href='./template/bs/hoj.css' type='text/css'>
+     <link rel="next" href="submitpage.php?cid=4912&pid=6&langmask=131069">
+</head>
+<body>
+<div id="wrapper">
+	<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel=stylesheet href='./include/hoj.css' type='text/css'>
+</head>
+<table width=100% class=toprow><tr align=center>
+	<td width=15%><a class=hd href='./'>主页</a>
+	<td width=15%><a class=hd href='./contest.php?cid=4912'>问题</a>
+	<td width=15%><a class=hd href='./contestrank.php?cid=4912'>名次</a>
+	<td width=15%><a class=hd href='./status.php?cid=4912'>状态</a>
+	<td width=15%><a class=hd href='./conteststatistics.php?cid=4912'>统计</a>
+</tr></table>
+<div id=broadcast>
+<marquee id=broadcast scrollamount=1 direction=up scrolldelay=250 onMouseOver='this.stop()' onMouseOut='this.start()';>
+  本OJ资源来自于互联网，如有侵权请来信告知，accoders@aliyun.com邮箱</marquee>
+</div><!--end broadcast-->
+<div id=main>
+
+	<title>问题 G: NOIP2006  能量项链 </title><center><h2>问题 G: NOIP2006  能量项链</h2><span class=green>时间限制: </span>1 Sec&nbsp;&nbsp;<span class=green>内存限制: </span>128 MB<br><span class=green>提交: </span>16&nbsp;&nbsp;<span class=green>解决: </span>51<br><br><span class=green>Judge Mode:</span>Std IO&nbsp;<br><span class=green>File Name:</span><br>[<a href='submitpage.php?cid=4912&pid=6&langmask=131069'>提交</a>][<a href='problemstatus.php?id=3078'>状态</a>]</center><h2>[题目描述]</h2><div class=content><p><font face="Times New Roman">在Mars星球上，每个Mars人都随身佩带着一串能量项链。在项链上有N颗能量珠。能量珠是一颗有头标记与尾标记的珠子，这些标记对应着某个正整数。并且，对于相邻的两颗珠子，前一颗珠子的尾标记一定等于后一颗珠子的头标记。因为只有这样，通过吸盘（吸盘是Mars人吸收能量的一种器官）的作用，这两颗珠子才能聚合成一颗珠子，同时释放出可以被吸盘吸收的能量。如果前一颗能量珠的头标记为m，尾标记为r，后一颗能量珠的头标记为r，尾标记为n，则聚合后释放的能量为m*r*n（Mars单位），新产生的珠子的头标记为m，尾标记为n。 <br />
+需要时，Mars人就用吸盘夹住相邻的两颗珠子，通过聚合得到能量，直到项链上只剩下一颗珠子为止。显然，不同的聚合顺序得到的总能量是不同的，请你设计一个聚合顺序，使一串项链释放出的总能量最大。 <br />
+例如：设N=4，4颗珠子的头标记与尾标记依次为(2，3) (3，5) (5，10) (10，2)。我们用记号◎表示两颗珠子的聚合操作，(j◎k)表示第j，k两颗珠子聚合后所释放的能量。则第4、1两颗珠子聚合后释放的能量为： <br />
+(4◎1)=10*2*3=60。 <br />
+这一串项链可以得到最优值的一个聚合顺序所释放的总能量为 <br />
+((4◎1)◎2)◎3）=10*2*3+10*3*5+10*5*10=710。</font></p></div><h2>输入</h2><div class=content><p><font face="Times New Roman">第一行是一个正整数N（4&le;N&le;100），表示项链上珠子的个数。第二行是N个用空格隔开的正整数，所有的数均不超过1000。第i个数为第i颗珠子的头标记（1&le;i&le;N），当i〈N时，第i颗珠子的尾标记应该等于第i+1颗珠子的头标记。第N颗珠子的尾标记应该等于第1颗珠子的头标记。 <br />
+至于珠子的顺序，你可以这样确定：将项链放到桌面上，不要出现交叉，随意指定第一颗珠子，然后按顺时针方向确定其他珠子的顺序。</font></p></div><h2>输出</h2><div class=content><p><font size="3" face="Times New Roman">只有一行，是一个正整数E（E&le;2.1*10^9），为一个最优聚合顺序所释放的总能量。</font></p></div><h2>样例输入</h2>
+			<pre class=content><span class=sampledata>4
+2  3  5  10
+
+</span></pre><h2>样例输出</h2>
+			<pre class=content><span class=sampledata>710
+</span></pre><h2>提示</h2>
+			<div class=content><p></p></div><center>[<a href='submitpage.php?cid=4912&pid=6&langmask=131069'>提交</a>][<a href='problemstatus.php?id=3078'>状态</a>]</center><div id=foot>
+	
+<center>
+	<p>
+			<a href=setlang.php?lang=ko>한국어</a>&nbsp;
+		<a href=setlang.php?lang=cn>中文</a>&nbsp;
+		<a href=setlang.php?lang=fa>فارسی</a>&nbsp;
+		<a href=setlang.php?lang=en>English</a>&nbsp;
+		<a href=setlang.php?lang=th>ไทย</a>	<br>
+		
+	
+		Anything about the Problems, Please Contact Admin:<a href="mailto:root@localhost">admin</a>
+		
+	
+		<br>
+		All Copyright Reserved 2010-2011 <a href='./'>AcCoders</a> TEAM<br>
+		<a href=gpl-2.0.txt><span class=green>GPL2.0</span></a> 2003-2012 <a href='http://code.google.com/p/hustoj/'>HUSTOJ Project</a> TEAM 版权所有:  <br>
+		
+     	<br><a href='../donate.php' target='_blank'>Donate</a><br>
+	</p>
+</center>
+
+</div><!--end foot-->
+</div><!--end main-->
+</div><!--end wrapper-->
+</body>
+</html>
+<!--not cached-->
